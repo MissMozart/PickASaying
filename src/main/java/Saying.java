@@ -27,9 +27,10 @@ public class Saying {
                 e.printStackTrace();
             }
             System.out.println("Would you like to see another saying? (y/n)");
-            String input = scanner.nextLine();
-            if (input == "n") {
-                break;
+            String input = scanner.next();
+            if (input.equals("n")) {
+                System.out.println("Goodbye!");
+                return;
             }
         }
     }
